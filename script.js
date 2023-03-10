@@ -1,4 +1,4 @@
-console.log('coucou');
+
 
 /* ---------------   constante pour les exercices  -------------------- */
 
@@ -36,7 +36,12 @@ const animaux = [
 
 /* ---------------   EXERCICE 1  -------------------- */
 
-/* écrivez votre code ici */
+for (i = 0; i < animaux.length; i++) {
+  console.log("JE suis un " + animaux[i].race + ", je possede " + animaux[i].patte + (animaux[i].patte === 4
+    ? " pattes et j'ai des poils"
+    : (animaux[i].patte === 2 ? " pattes et j'ai des plumes" : " pattes et j'ai des ecailles"))
+  );
+}
 
 
 
@@ -104,3 +109,12 @@ const animaux2 = [
   },
 ];
 
+
+function f(parametre) {
+  for (i = 0; i < parametre.length; i++) {
+    console.log("JE suis un " + parametre[i].race + ", je possede " + parametre[i].patte + (parametre[i].patte === 4
+      ? " pattes et j'ai des poils"
+      : (parametre[i].patte === 2 ? " pattes et j'ai des plumes" : " pattes et j'ai des ecailles"))
+    );
+  }
+}
